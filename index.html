@@ -7,119 +7,74 @@
     <meta name="author" content="g1xus/Radmir Gazizov"/>
     <link rel="stylesheet" href="css/normalize.css"/>
     <link rel="stylesheet" href="css/style.css"/>
-    <title>23 Degree</title>
+    <title>Игры Инстаграм</title>
   </head>
   <body>
-    <header class="header" id="main">
+    <header class="header">
       <div class="container">
-        <nav class="nav"><a href="#">
-            <picture>
-              <source media="(max-width: 768px)" srcset="img/logo768.png 1x"/>
-              <source media="(max-width: 992px)" srcset="img/logo992.png 1x"/><img src="img/logo.png"/>
-            </picture></a>
-          <div class="nav-interface">
-            <div class="nav-cta"><img class="nav-cta__img" src="img/header/smartphone.svg" alt=""/>
-              <div class="nav-cta__text"><span class="nav-cta__question">Есть вопросы? Звоните!</span><a class="nav-cta__phone" href="tel:+78002590936">8 /800/ 259 09 36</a></div>
+        <div class="header-wrapper"><a class="logo" href="#">
+            <picture class="logo__picture">
+              <source media="(max-width: 576px)" srcset="img/logo64.webp 1x"/><img class="logo__img" src="img/logo128.webp" alt="GameStories"/>
+            </picture>
+            <div class="header-logo__text">
+              <h1 class="logo__title">GameStories</h1>
+              <h2 class="logo__subtitle">Маркет игр для сторис</h2>
+            </div></a>
+          <nav class="header-nav"><a class="header-nav__link" href="#">Стоп-скрин</a><a class="header-nav__link" href="#">Логические</a><a class="header-nav__link" href="#">Викторины</a>
+            <div class="header-nav__link" id="more-btn">Ещё<i class="fa fa-chevron-down header-nav__more-icon" aria-hidden="true"></i>
+              <div class="header-nav__more"><a class="header-nav__link" href="#">Психологические тесты</a><a class="header-nav__link" href="#">Загадки</a><a class="header-nav__link" href="#">Найди отличия</a><a class="header-nav__link" href="#">Квесты</a><a class="header-nav__link" href="#">Ребусы</a><a class="header-nav__link" href="#">Правда-ложь</a><a class="header-nav__link" href="#">Угадай</a><a class="header-nav__link" href="#">Логика с анимацией</a><a class="header-nav__link" href="#">Набор интерактивов</a></div>
             </div>
-            <div class="nav-toggler" id="toggler"><span class="nav-toggler__line"></span></div>
+          </nav>
+          <div class="header-cart"><i class="fa fa-bars header-cart__menu-toggler"></i>
+            <p class="header-cart__tip">Доберите <strong class="header-cart__tip_strong">5 игр </strong>до<br/><strong class="header-cart__tip_danger">скидки 30%  </strong>на всё</p><a class="header-cart__button" href="#"><i class="fa fa-shopping-cart header-cart__cart-icon"></i><span class="header-cart__text">Корзина</span><span class="header-cart__count">0</span></a>
           </div>
-        </nav>
-        <div class="hero">
-          <div class="hero-title">
-            <h1 class="hero-title__major">Услуги по 3D моделированию</h1><span class="hero-title__minor">полный спектр услуг</span>
-          </div>
-          <p class="hero-cta">Оставьте заявку сейчас и получите дизайн интерьера 25кв2 бесплатно!*</p>
-          <form class="hero-form" action="#">
-            <div class="hero-form__wrapper">
-              <input class="hero-form__input" type="text" name="" placeholder="Ваше имя"/>
-              <input class="hero-form__input" type="email" name="" placeholder="E-mail"/>
-              <input class="hero-form__input" type="tel" name="" placeholder="Номер телефона"/>
-            </div>
-            <div class="hero-button__wrapper">
-              <button class="header-button" type="submit"> Оставить заявку!</button>
-            </div>
-          </form><span class="hero-security">*Мы гарантируем конфидициальность передаваемых данных</span>
-          <div class="slide" id="scroll"><a href="#services"><span class="arrow-7"></span></a></div>
         </div>
       </div>
-      <div class="nav-menu"><a class="nav-menu__el" href="#main">Главная</a><a class="nav-menu__el" href="#services">Наши услуги</a><a class="nav-menu__el" href="#rates">Стоимость</a><a class="nav-menu__el" href="#">Портфолио</a><a class="nav-menu__el" href="#">Наша команда</a><a class="nav-menu__el" href="#">Блог</a></div>
     </header>
-    <section class="section services" id="services">
+    <div class="topbar">
       <div class="container">
-        <div class="section-headline">
-          <h1 class="section-headline__title dark">Наши услуги</h1>
-        </div>
-        <div class="services-wrapper">
-          <div class="services-element">
-            <div class="services-element__aside">
-              <h3 class="services-element__headline">  Дизайн интерьера</h3>
-              <p class="services-element__description">Услуга, направленная на разработку интерьеров помещений с целью обеспечить удобство и эстетически приятное ощущение у человека при нахождении в помещении</p>
-              <button class="button services-element__button" id="first-button">Оставить заявку</button>
-            </div>
-            <picture class="services-element__picture">
-              <source media="(max-width: 768px)" srcset="img/services/1992.webp 1x"/><img class="services-element__img" src="img/services/1.webp"/>
-            </picture>
+        <div class="topbar-wrapper">
+          <div class="topbar-title">
+            <div class="topbar-title__text">Все игры</div>
+            <div class="topbar-title__count">5 968</div>
           </div>
-          <div class="services-element">
-            <picture class="services-element__picture" id="left-img">
-              <source media="(max-width: 768px)" srcset="img/services/2992.webp 1x"/><img class="services-element__img" src="img/services/2.webp"/>
-            </picture>
-            <div class="services-element__aside">
-              <h3 class="services-element__headline">Дизайн экстерьера</h3>
-              <p class="services-element__description">Услуга, направленная на разработку дизайна прилегающих элементов зданий, а также дизайн самих зданий, позволяющая обеспечить удобство людей при нахождении на территории</p>
+          <div class="topbar-sort">
+            <div class="topbar-sort__toggler" id="sort-toggler">Сортировка по умолчанию<i class="fa fa-sort topbar-sort__icon"></i>
+              <div class="topbar-sort__menu"><a class="topbar-sort__element topbar-sort__element_selected" href="#">Сортировка по умолчанию</a><a class="topbar-sort__element" href="#">Сначала популярное</a><a class="topbar-sort__element" href="#">Сначала подешевле</a><a class="topbar-sort__element" href="#">Сначала подороже</a><a class="topbar-sort__element" href="#">Сначала со скидками</a></div>
             </div>
-          </div>
-          <div class="services-element">
-            <div class="services-element__aside">
-              <h3 class="services-element__headline">Визуализация</h3>
-              <p class="services-element__description">Услуга, направленная на разработку дизайна прилегающих элементов зданий, а также дизайн самих зданий, позволяющая обеспечить удобство людей при нахождении на территории</p>
-            </div>
-            <picture class="services-element__picture">
-              <source media="(max-width: 768px)" srcset="img/services/3992.webp 1x"/><img class="services-element__img" src="img/services/3.webp"/>
-            </picture>
+            <div class="topbar-sort__toggler" id="filter-toggler">Фильтры</div>
           </div>
         </div>
       </div>
-    </section>
-    <section class="section rates light" id="rates">
+    </div>
+    <footer class="footer">
       <div class="container">
-        <div class="section-headline">
-          <h1 class="section-headline__title light">Расчитать стоимость</h1>
-          <p class="section-headline__subtitle">Расчитайте предварительную стоимость разработки интерьера</p>
-        </div>
-        <div class="rates-wrapper">
-          <div class="rates-interface">
-            <div class="rates-interface__area rates-interface__border"><span class="rates-interface__title">Площадь помещения:</span>
-              <div class="rates-interface__dots"><span class="rates-interface__dot">100м<sup>2</sup></span><span class="rates-interface__dot">10 000м<sup>2</sup></span><span class="rates-interface__dot">250 000м<sup>2</sup></span><span class="rates-interface__dot">500 000м<sup>2</sup></span></div>
-            </div>
-            <div class="rates-interface__packages rates-interface__border"><span class="rates-interface__title">Выберите пакет:</span>
-              <div class="rates-interface__buttons">
-                <button class="rates-interface__button rates-interface__popup" id="popup-light">Light</button>
-                <button class="rates-interface__button rates-interface__popup" id="popup-med">Medium</button>
-                <button class="rates-interface__button rates-interface__popup" id="popup-full">Full</button>
-              </div>
+        <div class="footer-wrapper">
+          <div class="footer-info"><a class="logo footer-logo" href="#">
+              <picture class="logo__picture">
+                <source media="(max-width: 576px)" srcset="img/logo64.webp 1x"/><img class="logo__img" src="img/logo128.webp" alt="GameStories"/>
+              </picture>
+              <div class="header-logo__text">
+                <h1 class="logo__title">GameStories</h1>
+                <h2 class="logo__subtitle">Маркет игр для сторис</h2>
+              </div></a><a class="footer-info__doc" href="#">Пользовательское соглашение</a><a class="footer-info__doc" href="#">Оферта</a><span class="footer-info__copyright">2020 © GameStories</span></div>
+          <div class="footer-categories">
+            <h5 class="footer__title">Категории</h5>
+            <div class="footer-categories__wrapper">
+              <div class="footer-categories__column"><a class="footer-categories__el" href="#">Стоп-скрин</a><a class="footer-categories__el" href="#">Логические</a><a class="footer-categories__el" href="#">Викторины</a><a class="footer-categories__el" href="#">Психологические тесты</a><a class="footer-categories__el" href="#">Загадки</a><a class="footer-categories__el" href="#">Найди отличия</a></div>
+              <div class="footer-categories__column"><a class="footer-categories__el" href="#">Квесты</a><a class="footer-categories__el" href="#">Ребусы</a><a class="footer-categories__el" href="#">Правда-ложь</a><a class="footer-categories__el" href="#">Угадай</a><a class="footer-categories__el" href="#">Логика с анимацией</a><a class="footer-categories__el" href="#">Набор интерактивов</a></div>
             </div>
           </div>
-          <div class="rates-data">
-            <div class="rates-data__element">
-              <div class="rates-data__title">Площадь помещения:</div>
-              <div class="rates-data__info">-</div>
-            </div>
-            <div class="rates-data__element">
-              <div class="rates-data__title">Средняя стоимость м</div>
-              <div class="rates-data__info">-</div>
-            </div>
-            <div class="rates-data__element">
-              <div class="rates-data__title">Средняя стоимость объекта</div>
-              <div class="rates-data__info">-</div>
-            </div>
-            <div class="rates-data__interface">
-              <button class="button rates-data__button">Получить консультацию специалиста</button><span class="rates-data__cta">или позвоните нам по телефону:</span><a class="rates-data__phone" href="tel:+ 79273887177">+ 7 927 388 71 77</a>
+          <div class="footer-contacts">
+            <h5 class="footer__title">Контакты</h5>
+            <div class="footer-contacts__wrapper">
+              <div class="footer-contacts__column"><a class="footer-contacts__link" href="tel:+70000000001"><i class="fa fa-phone"></i>+7 (000) 000-00-03</a><a class="footer-contacts__link" href="mailto:support@storiesgames.ru"><i class="fa fa-envelope-o"></i>support@storiesgames.ru</a></div>
+              <div class="footer-contacts__column"><a href="#"><img class="footer-contacts__img" src="img/footer/instagram.svg" alt=""/></a><a href="#"><img class="footer-contacts__img" src="img/footer/telegram.svg" alt=""/></a></div>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </footer>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
   </body>
