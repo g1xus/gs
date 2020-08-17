@@ -26,26 +26,80 @@
             </div>
           </nav>
           <div class="header-cart"><i class="fa fa-bars header-cart__menu-toggler"></i>
-            <p class="header-cart__tip">Доберите <strong class="header-cart__tip_strong">5 игр </strong>до<br/><strong class="header-cart__tip_danger">скидки 30%  </strong>на всё</p><a class="header-cart__button" href="#"><i class="fa fa-shopping-cart header-cart__cart-icon"></i><span class="header-cart__text">Корзина</span><span class="header-cart__count">0</span></a>
+            <p class="header-cart__tip">Доберите <strong>5 игр </strong>до<br/><strong class="header-cart__tip_danger">скидки 30%  </strong>на всё</p><a class="header-cart__button" href="#"><i class="fa fa-shopping-cart header-cart__cart-icon"></i><span class="header-cart__text">Корзина</span><span class="header-cart__count">0</span></a>
           </div>
         </div>
       </div>
     </header>
-    <div class="topbar">
-      <div class="container">
-        <div class="topbar-wrapper">
-          <div class="topbar-title">
-            <div class="topbar-title__text">Все игры</div>
-            <div class="topbar-title__count">5 968</div>
+    <div class="container">
+      <div class="topbar">
+        <div class="topbar-title">
+          <div class="topbar-title__text">Все игры</div>
+          <div class="topbar-title__count">5 968</div>
+        </div>
+        <div class="topbar-sort">
+          <div class="topbar-sort__toggler" id="sort-toggler">Сортировка по умолчанию<i class="fa fa-sort topbar-sort__icon"></i>
+            <div class="topbar-sort__menu"><a class="topbar-sort__element topbar-sort__element_selected" href="#">Сортировка по умолчанию</a><a class="topbar-sort__element" href="#">Сначала популярное</a><a class="topbar-sort__element" href="#">Сначала подешевле</a><a class="topbar-sort__element" href="#">Сначала подороже</a><a class="topbar-sort__element" href="#">Сначала со скидками</a></div>
           </div>
-          <div class="topbar-sort">
-            <div class="topbar-sort__toggler" id="sort-toggler">Сортировка по умолчанию<i class="fa fa-sort topbar-sort__icon"></i>
-              <div class="topbar-sort__menu"><a class="topbar-sort__element topbar-sort__element_selected" href="#">Сортировка по умолчанию</a><a class="topbar-sort__element" href="#">Сначала популярное</a><a class="topbar-sort__element" href="#">Сначала подешевле</a><a class="topbar-sort__element" href="#">Сначала подороже</a><a class="topbar-sort__element" href="#">Сначала со скидками</a></div>
-            </div>
-            <div class="topbar-sort__toggler" id="filter-toggler">Фильтры</div>
-          </div>
+          <div class="topbar-sort__toggler" id="filter-toggler">Фильтры</div>
         </div>
       </div>
+      <main class="main">
+        <aside class="aside">
+          <h5 class="aside-title">Все игры</h5>
+          <div class="aside-sort">
+            <ul class="aside-sort__list">
+              <li><a class="aside-sort__element" href="#">Стоп-скрин</a></li>
+              <li><a class="aside-sort__element" href="#">Логические</a></li>
+              <li><a class="aside-sort__element" href="#">Викторины</a></li>
+              <li><a class="aside-sort__element" href="#">Психологические тесты</a></li>
+              <li><a class="aside-sort__element" href="#">Загадки</a></li>
+              <li><a class="aside-sort__element" href="#">Найди отличия</a></li>
+              <li><a class="aside-sort__element" href="#">Квесты</a></li>
+              <li><a class="aside-sort__element" href="#">Ребусы</a></li>
+              <li><a class="aside-sort__element" href="#">Правда-ложь</a></li>
+              <li><a class="aside-sort__element" href="#">Угадай</a></li>
+              <li><a class="aside-sort__element" href="#">Логика с анимацией</a></li>
+              <li><a class="aside-sort__element" href="#">Набор интерактивов</a></li>
+            </ul>
+          </div>
+          <div class="aside-checkboxes">
+            <div class="aside-checkboxes__element">
+              <input class="aside-checkboxes__checkbox" type="checkbox" name="" placeholder="Хит" id="popular"/>
+              <label for="popular">Хит</label>
+            </div>
+            <div class="aside-checkboxes__element">
+              <input class="aside-checkboxes__checkbox" type="checkbox" name="" placeholder="Новинка" id="new"/>
+              <label for="new">Новинка</label>
+            </div>
+          </div>
+          <div class="aside-price-filter"><span class="aside-price-filter__title">Цена, ₽</span>
+            <input class="aside-price-filter__input" type="text" name="" placeholder="от 100"/>
+            <input class="aside-price-filter__input" type="text" name="" placeholder="до 5 680"/>
+          </div>
+          <div class="aside__isdiscount">
+            <input class="aside-checkboxes__checkbox" type="checkbox" name="" id="isdiscount"/>
+            <label for="isdiscount">Только со скидками</label>
+          </div>
+          <button class="aside__show-btn" type="submit">Показать</button>
+        </aside>
+        <section class="products">
+          <div class="products-topbar">
+            <div class="products-topbar__column" id="topbar-column_1">
+              <div class="products-topbar__major"><small class="products-topbar__small">скидка</small><strong class="products-topbar__strong">30%</strong></div>
+              <div class="products-topbar__minor">
+                <p class="products-topbar__text">на всю корзину<br/>при покупке <strong>5 игр</strong></p>
+              </div>
+            </div>
+            <div class="products-topbar__column" id="topbar-column_2">
+              <div class="products-topbar__major"><small class="products-topbar__small">скидка</small><strong class="products-topbar__strong">50%</strong></div>
+              <div class="products-topbar__minor">
+                <p class="products-topbar__text">на всю корзину<br/>при покупке <strong>10 игр</strong></p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
     </div>
     <footer class="footer">
       <div class="container">
