@@ -12,7 +12,7 @@
   <body>
     <header class="header">
       <div class="container">
-        <div class="header-wrapper"><a class="logo" href="#">
+        <div class="header-wrapper"><a class="logo" href="index.html">
             <picture class="logo__picture">
               <source media="(max-width: 576px)" srcset="img/logo64.webp 1x"/><img class="logo__img" src="img/logo128.webp" alt="GameStories"/>
             </picture>
@@ -22,7 +22,8 @@
             </div></a>
           <nav class="header-nav"><a class="header-nav__link" href="#">Стоп-скрин</a><a class="header-nav__link" href="#">Логические</a><a class="header-nav__link" href="#">Викторины</a>
             <div class="header-nav__link" id="more-btn">Ещё<i class="fa fa-chevron-down header-nav__more-icon" aria-hidden="true"></i>
-              <div class="header-nav__more"><a class="header-nav__link" href="#">Психологические тесты</a><a class="header-nav__link" href="#">Загадки</a><a class="header-nav__link" href="#">Найди отличия</a><a class="header-nav__link" href="#">Квесты</a><a class="header-nav__link" href="#">Ребусы</a><a class="header-nav__link" href="#">Правда-ложь</a><a class="header-nav__link" href="#">Угадай</a><a class="header-nav__link" href="#">Логика с анимацией</a><a class="header-nav__link" href="#">Набор интерактивов</a></div>
+              <div class="header-nav__more"><a class="header-nav__link" href="#">Логические</a><a class="header-nav__link" href="#">Психологические тесты</a><a class="header-nav__link" href="#">Загадки</a><a class="header-nav__link" href="#">Найди отличия</a><a class="header-nav__link" href="#">Квесты</a><a class="header-nav__link" href="#">Ребусы</a><a class="header-nav__link" href="#">Правда-ложь</a><a class="header-nav__link" href="#">Угадай</a><a class="header-nav__link" href="#">Логика с анимацией</a><a class="header-nav__link" href="#">Набор интерактивов</a>
+              </div>
             </div>
           </nav>
           <div class="header-cart"><i class="fa fa-bars header-cart__menu-toggler"></i>
@@ -39,7 +40,8 @@
         </div>
         <div class="topbar-sort">
           <div class="topbar-sort__toggler" id="sort-toggler">Сортировка по умолчанию<i class="fa fa-sort topbar-sort__icon"></i>
-            <div class="topbar-sort__menu"><a class="topbar-sort__element topbar-sort__element_selected" href="#">Сортировка по умолчанию</a><a class="topbar-sort__element" href="#">Сначала популярное</a><a class="topbar-sort__element" href="#">Сначала подешевле</a><a class="topbar-sort__element" href="#">Сначала подороже</a><a class="topbar-sort__element" href="#">Сначала со скидками</a></div>
+            <div class="topbar-sort__menu"><a class="topbar-sort__element_selected topbar-sort__element" href="#">Сортировка по умолчанию</a><a class="topbar-sort__element" href="#">Сначала популярное</a><a class="topbar-sort__element" href="#">Сначала подешевле</a><a class="topbar-sort__element" href="#">Сначала подороже</a><a class="topbar-sort__element" href="#">Сначала со скидками</a>
+            </div>
           </div>
           <div class="topbar-sort__toggler" id="filter-toggler">Фильтры</div>
         </div>
@@ -81,7 +83,7 @@
             <input class="aside-checkboxes__checkbox" type="checkbox" name="" id="isdiscount"/>
             <label for="isdiscount">Только со скидками</label>
           </div>
-          <button class="aside__show-btn" type="submit">Показать</button>
+          <button class="aside__show-btn" type="submit">Показать</button><span id="aside-close"></span>
         </aside>
         <section class="products">
           <div class="products-topbar">
@@ -98,67 +100,55 @@
               </div>
             </div>
           </div>
-          <div class="products__wrapper">
-            <div class="products-card">
-              <div class="products-card__top"><img class="products-card__img" src="img/cards/game-1.webp" alt="Приготовь смузи" srcset=""/><span class="products-card__tag products-card__tag_discount">-34%</span><a class="products-card__link" href="">Смотреть видео</a>
+          <div class="products__wrapper"><a class="products-card" href="product.html">
+              <div class="products-card__top"><img class="products-card__img" src="img/cards/game-1.webp" alt="Приготовь смузи" srcset=""/><span class="products-card__tag products-card__tag_discount">-34%</span><span class="products-card__link">Смотреть видео</span>
               </div>
               <h2 class="products-card__title">Приготовь смузи <span class="products-card__subtitle">— игра стоп-скрин</span></h2>
               <div class="products-card__bottom">
-                <div class="products-card__price"><strong class="products-card__now">350 ₽</strong><span class="products-card__discount">400 ₽</span>
+                <div class="products-card__price"><strong class="products-card__now">350 &#8399;</strong><span class="products-card__discount">400 &#8399;</span>
                 </div>
                 <button class="button products-card__button">В корзину</button>
-              </div>
-            </div>
-            <div class="products-card">
-              <div class="products-card__top"><img class="products-card__img" src="img/cards/game-2.webp" alt="Приготовь смузи" srcset=""/><span class="products-card__tag products-card__tag_new">Новинка</span><a class="products-card__link" href="">Смотреть видео</a>
+              </div></a><a class="products-card" href="product.html">
+              <div class="products-card__top"><img class="products-card__img" src="img/cards/game-2.webp" alt="Приготовь смузи" srcset=""/><span class="products-card__tag products-card__tag_new">Новинка</span><span class="products-card__link">Смотреть видео</span>
               </div>
               <h2 class="products-card__title">Сделай маникюр <span class="products-card__subtitle">— игра стоп-скрин</span></h2>
               <div class="products-card__bottom">
-                <div class="products-card__price"><strong class="products-card__now">350 ₽</strong>
+                <div class="products-card__price"><strong class="products-card__now">350 &#8399;</strong>
                 </div>
                 <button class="button products-card__button">В корзину</button>
-              </div>
-            </div>
-            <div class="products-card">
-              <div class="products-card__top"><img class="products-card__img" src="img/cards/game-3.webp" alt="Приготовь смузи" srcset=""/><span class="products-card__tag products-card__tag_popular">Хит</span><a class="products-card__link" href="">Смотреть видео</a>
+              </div></a><a class="products-card" href="product.html">
+              <div class="products-card__top"><img class="products-card__img" src="img/cards/game-3.webp" alt="Приготовь смузи" srcset=""/><span class="products-card__tag products-card__tag_popular">Хит</span><span class="products-card__link">Смотреть видео</span>
               </div>
               <h2 class="products-card__title">Найди семь отличий <span class="products-card__subtitle">— викторина</span></h2>
               <div class="products-card__bottom">
-                <div class="products-card__price"><strong class="products-card__now">350 ₽</strong>
+                <div class="products-card__price"><strong class="products-card__now">350 &#8399;</strong>
                 </div>
                 <button class="button products-card__button">В корзину</button>
-              </div>
-            </div>
-            <div class="products-card">
-              <div class="products-card__top"><img class="products-card__img" src="img/cards/game-4.webp" alt="Приготовь смузи" srcset=""/><a class="products-card__link" href="">Смотреть видео</a>
+              </div></a><a class="products-card" href="product.html">
+              <div class="products-card__top"><img class="products-card__img" src="img/cards/game-4.webp" alt="Приготовь смузи" srcset=""/><span class="products-card__link">Смотреть видео</span>
               </div>
               <h2 class="products-card__title">Что сегодня приготовить <span class="products-card__subtitle">— игра стоп-скрин</span></h2>
               <div class="products-card__bottom">
-                <div class="products-card__price"><strong class="products-card__now">350 ₽</strong>
+                <div class="products-card__price"><strong class="products-card__now">350 &#8399;</strong>
                 </div>
                 <button class="button products-card__button">В корзину</button>
-              </div>
-            </div>
-            <div class="products-card">
-              <div class="products-card__top"><img class="products-card__img" src="img/cards/game-5.webp" alt="Приготовь смузи" srcset=""/><a class="products-card__link" href="">Смотреть видео</a>
+              </div></a><a class="products-card" href="product.html">
+              <div class="products-card__top"><img class="products-card__img" src="img/cards/game-5.webp" alt="Приготовь смузи" srcset=""/><span class="products-card__link">Смотреть видео</span>
               </div>
               <h2 class="products-card__title">Самый внимательный сыщик <span class="products-card__subtitle">— игра найди отличия</span></h2>
               <div class="products-card__bottom">
-                <div class="products-card__price"><strong class="products-card__now">350 ₽</strong><span class="products-card__discount">400 ₽</span>
+                <div class="products-card__price"><strong class="products-card__now">350 &#8399;</strong><span class="products-card__discount">400 &#8399;</span>
                 </div>
                 <button class="button products-card__button">В корзину</button>
-              </div>
-            </div>
-            <div class="products-card">
-              <div class="products-card__top"><img class="products-card__img" src="img/cards/game-6.webp" alt="Приготовь смузи" srcset=""/><a class="products-card__link" href="">Смотреть видео</a>
+              </div></a><a class="products-card" href="product.html">
+              <div class="products-card__top"><img class="products-card__img" src="img/cards/game-6.webp" alt="Приготовь смузи" srcset=""/><span class="products-card__link">Смотреть видео</span>
               </div>
               <h2 class="products-card__title">Помоги Гарри поймать снитч <span class="products-card__subtitle">— игра стоп-скрин</span></h2>
               <div class="products-card__bottom">
-                <div class="products-card__price"><strong class="products-card__now">350 ₽</strong>
+                <div class="products-card__price"><strong class="products-card__now">350 &#8399;</strong>
                 </div>
                 <button class="button products-card__button">В корзину</button>
-              </div>
-            </div>
+              </div></a>
           </div>
           <button class="products__show-more">Показать ещё</button>
           <div class="products__page-nav">
@@ -193,8 +183,10 @@
           <div class="footer-categories">
             <h5 class="footer__title">Категории</h5>
             <div class="footer-categories__wrapper">
-              <div class="footer-categories__column"><a class="footer-categories__el" href="#">Стоп-скрин</a><a class="footer-categories__el" href="#">Логические</a><a class="footer-categories__el" href="#">Викторины</a><a class="footer-categories__el" href="#">Психологические тесты</a><a class="footer-categories__el" href="#">Загадки</a><a class="footer-categories__el" href="#">Найди отличия</a></div>
-              <div class="footer-categories__column"><a class="footer-categories__el" href="#">Квесты</a><a class="footer-categories__el" href="#">Ребусы</a><a class="footer-categories__el" href="#">Правда-ложь</a><a class="footer-categories__el" href="#">Угадай</a><a class="footer-categories__el" href="#">Логика с анимацией</a><a class="footer-categories__el" href="#">Набор интерактивов</a></div>
+              <div class="footer-categories__column"><a class="footer-categories__el" href="#">Стоп-скрин</a><a class="footer-categories__el" href="#">Логические</a><a class="footer-categories__el" href="#">Викторины</a><a class="footer-categories__el" href="#">Психологические тесты</a><a class="footer-categories__el" href="#">Загадки</a><a class="footer-categories__el" href="#">Найди отличия</a>
+              </div>
+              <div class="footer-categories__column"><a class="footer-categories__el" href="#">Квесты</a><a class="footer-categories__el" href="#">Ребусы</a><a class="footer-categories__el" href="#">Правда-ложь</a><a class="footer-categories__el" href="#">Угадай</a><a class="footer-categories__el" href="#">Логика с анимацией</a><a class="footer-categories__el" href="#">Набор интерактивов</a>
+              </div>
             </div>
           </div>
           <div class="footer-contacts">
