@@ -33,18 +33,43 @@
       </div>
     </header>
     <div class="container">
-      <main class="product"><a class="product__topbar" href="index.html"><i class="fa fa-angle-left" aria-hidden="true"></i>Вернуться к играм</a>
-        <div class="product-card">
-          <div class="product-card__images">
-            <div class="product-card__img"><img src="img/cards/game-1.webp" alt="Приготовь смузи"/></div>
-            <div class="product-card__video product-card__img"><img src="img/cards/game-1.webp" alt="Приготовь смузи"/></div>
+      <main class="cart"><a class="product__topbar" href="index.html"><i class="fa fa-angle-left" aria-hidden="true"></i>Вернуться к играм</a>
+        <div class="cart-wrapper">
+          <div class="cart-headline"> 
+            <div class="cart-headline__title">В корзине 4 игры</div>
+            <button class="cart-headline__button">Очистить корзину<i class="fa fa-times" aria-hidden="true"></i></button>
+            <div class="cart-headline__banner">
+               Добавьте ещё <strong>1 игру, </strong>чтобы получить <strong>скидку 30% </strong>на всю корзину.</div>
           </div>
-          <div class="product-card__info">
-            <h2 class="product-card__title">Приготовь смузи</h2>
-            <p class="product-card__description">Описание игры. Разнообразный и богатый опыт консультация с широким активом требуют определения и уточнения дальнейших направлений развития.</p>
-            <div class="product-card__bottom">
-              <div class="product-card__price"><strong class="product-card__price_now">5 350 &#8399;</strong><span class="product-card__price_before">6 400 &#8399;</span></div>
-              <button class="button product-card__button">В корзину</button>
+          <div class="cart-main">
+            <div class="cart-main__products">
+              <div class="cart-main__product cart-main__product_gray"><span class="cart-main__title">Самый внимательный сыщик Холмс</span>
+                <div class="cart-main__price"><strong class="cart-main__price_now">550 руб.</strong>
+                </div><a class="cart-main__delete" href="#">Удалить</a>
+              </div>
+              <div class="cart-main__product cart-main__product_undefined"><span class="cart-main__title">Правда или ложь</span>
+                <div class="cart-main__price"><strong class="cart-main__price_now">250 руб.</strong>
+                </div><a class="cart-main__delete" href="#">Удалить</a>
+              </div>
+              <div class="cart-main__product cart-main__product_gray"><span class="cart-main__title">Отгадай слово</span>
+                <div class="cart-main__price"><strong class="cart-main__price_now">330 руб.</strong>
+                </div><a class="cart-main__delete" href="#">Удалить</a>
+              </div>
+              <div class="cart-main__product cart-main__product_undefined"><span class="cart-main__title">Правда или ложь</span>
+                <div class="cart-main__price"><strong class="cart-main__price_now">440 руб.</strong>
+                </div><a class="cart-main__delete" href="#">Удалить</a>
+              </div>
+              <div class="cart-main__product cart-main__product_gray"><span class="cart-main__title">Самый внимательный сыщик Холмс</span>
+                <div class="cart-main__price">
+                  <div class="cart-main__price_tag">-10%</div><strong class="cart-main__price_now">360 руб.</strong><span class="cart-main__price_before">400 руб.</span>
+                </div><a class="cart-main__delete" href="#">Удалить</a>
+              </div>
+            </div>
+            <div class="cart-main__payment">
+              <div class="cart-main__sum"> <span class="cart-main__text">Сумма</span><span class="cart-main__number">13 350 &#8399;</span></div>
+              <div class="cart-main__discount"> <span class="cart-main__text">Скидка</span><span class="cart-main__number">-550 &#8399;</span></div>
+              <div class="cart-main__total"> <strong class="cart-main__text">Итого к оплате</strong><strong class="cart-main__number">12 950 &#8399;</strong></div>
+              <button class="button cart-main__button">Перейти к оформлению</button>
             </div>
           </div>
         </div>
