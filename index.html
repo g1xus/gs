@@ -10,6 +10,29 @@
     <title>Игры Инстаграм</title>
   </head>
   <body>
+    <div class="order-popup">
+      <div class="order-popup__headline">
+        <h5 class="order-popup__title">Оформление заказа</h5>
+        <div class="order-popup__close">&#215;</div>
+      </div>
+      <div class="order-popup__main">
+        <p class="order-popup__text">Введите имя и <b>реальный e-mail адрес. </b>После оплаты на него придет письмо с вашим заказом и инструкцией по установке.</p>
+        <form class="order-popup__form" action="#">
+          <label class="order-popup__label" for="name">Ваше имя</label>
+          <input class="order-popup__input" type="text" id="name"/>
+          <label class="order-popup__label" for="mail">Ваша почта</label>
+          <input class="order-popup__input" type="text" id="mail"/>
+          <div class="order-popup__access">
+            <input class="order-popup__checkbox" type="checkbox" id="access"/>
+            <label for="access">Я соглашаюсь с <a href="#">Политикой конфиденциальности </a>и <a href="#">Офертой</a></label>
+          </div>
+          <div class="order-popup__bottom">
+            <button class="order-popup__cancel">Отмена</button>
+            <button class="button" type="submit">К оплате</button>
+          </div>
+        </form>
+      </div>
+    </div>
     <header class="header">
       <div class="container">
         <div class="header-wrapper"><a class="logo" href="index.html">
