@@ -10,6 +10,55 @@
     <title>Игры Инстаграм</title>
   </head>
   <body>
+    <div class="popup sent-popup">
+      <div class="popup__headline">
+        <h5 class="popup__title"> <i class="fa fa-check-circle" aria-hidden="true"></i>Заявка отправлена</h5>
+        <div class="popup__close">&#215;</div>
+      </div>
+      <div class="sent-popup__main">
+        <p class="sent-popup__text">Мы рассмотрим вашу заявку в течении 3-х рабочих дней, и пришлем ответ на указанную почту. Спасибо!</p><a class="button" href="index.html">На главную</a>
+      </div>
+    </div>
+    <div class="popup form-popup">
+      <div class="popup__headline">
+        <h5 class="popup__title">Заполните форму</h5>
+        <div class="popup__close">&#215;</div>
+      </div>
+      <form class="form-popup__main">
+        <div class="form-popup__left">
+          <div class="form-popup__box">
+            <label class="popup__label" for="name">Имя<span class="popup__mark">*</span></label>
+            <input class="popup__input" type="text" id="name"/>
+          </div>
+          <div class="form-popup__box">
+            <label class="popup__label" for="email">Почта<span class="popup__mark">*</span></label>
+            <input class="popup__input" type="text" id="email"/>
+          </div>
+          <div class="form-popup__box">
+            <label class="popup__label" for="phone">Телефон<span class="popup__mark">*</span></label>
+            <input class="popup__input" type="text" id="phone"/>
+          </div>
+        </div>
+        <div class="form-popup__right">
+          <div class="form-popup__box">
+            <label class="popup__label" for="portfolio">Ссылка на портфолио или файлобменник с вашими играми<span class="popup__mark">*</span></label>
+            <input class="popup__input" type="text" id="portfolio"/>
+          </div>
+          <div class="form-popup__box">
+            <label class="popup__label" for="msg">Расскажите о себе (или другая информация, которую посчитаете нужной)</label>
+            <textarea class="form-popup__input" id="msg"></textarea>
+          </div>
+          <div class="popup__access">
+            <input class="popup__checkbox" type="checkbox" id="access"/>
+            <label for="access">Я соглашаюсь с <a href="#">Политикой конфиденциальности </a>и <a href="#">Офертой</a></label>
+          </div>
+        </div>
+        <div class="popup__bottom">
+          <button class="popup__cancel">Отмена</button>
+          <button class="button popup__submit" type="submit">Отправить</button>
+        </div>
+      </form>
+    </div>
     <header class="header">
       <div class="container">
         <div class="header-wrapper"><a class="logo" href="index.html">
@@ -163,7 +212,7 @@
             <div class="products-partnership__invite"><small class="products-partnership__small">Приглашаем к сотрудничеству</small><strong class="products-partnership__strong">создателей игр для сторис</strong></div>
             <div class="products-partnership__cta">
               <p class="products-partnership__text">Если ты умеешь делать красивые и интересные игры для сторис, у нас для тебя есть предложение👇</p>
-              <button class="button">Умею делать игры для сторис</button>
+              <button class="button products-partnership__button">Умею делать игры для сторис</button>
             </div>
           </div>
         </section>

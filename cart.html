@@ -10,25 +10,37 @@
     <title>Игры Инстаграм</title>
   </head>
   <body>
-    <div class="order-popup">
-      <div class="order-popup__headline">
-        <h5 class="order-popup__title">Оформление заказа</h5>
-        <div class="order-popup__close">&#215;</div>
+    <div class="popup success-popup">
+      <div class="popup__headline">
+        <h5 class="popup__title"> <i class="fa fa-check-circle" aria-hidden="true"></i>Оплата прошла успешно</h5>
+        <div class="popup__close">&#215;</div>
+      </div>
+      <div class="success-popup__main">
+        <p class="success-popup__text">Мы выслали купленную игру <b>на указанную вами почту.</b><br/><br/>Если письмо не пришло через 5 минут, проверьте папку <b>Спам.</b><br/><br/>Если возникли трудности, <a href="#">напишите в нашу техподдержку.</a></p>
+      </div>
+    </div>
+    <div class="popup redirect-popup"><span class="redirect-popup__text">Переход на эквайринг для оплаты</span>
+      <button class="button redirect-popup__button">После оплаты</button>
+    </div>
+    <div class="popup order-popup">
+      <div class="popup__headline">
+        <h5 class="popup__title">Оформление заказа</h5>
+        <div class="popup__close">&#215;</div>
       </div>
       <div class="order-popup__main">
         <p class="order-popup__text">Введите имя и <b>реальный e-mail адрес. </b>После оплаты на него придет письмо с вашим заказом и инструкцией по установке.</p>
         <form class="order-popup__form" action="#">
-          <label class="order-popup__label" for="name">Ваше имя</label>
-          <input class="order-popup__input" type="text" id="name"/>
-          <label class="order-popup__label" for="mail">Ваша почта</label>
-          <input class="order-popup__input" type="text" id="mail"/>
-          <div class="order-popup__access">
-            <input class="order-popup__checkbox" type="checkbox" id="access"/>
+          <label class="popup__label" for="name">Ваше имя</label>
+          <input class="popup__input" type="text" id="name"/>
+          <label class="popup__label" for="mail">Ваша почта</label>
+          <input class="popup__input" type="text" id="mail"/>
+          <div class="popup__access">
+            <input class="popup__checkbox" type="checkbox" id="access"/>
             <label for="access">Я соглашаюсь с <a href="#">Политикой конфиденциальности </a>и <a href="#">Офертой</a></label>
           </div>
-          <div class="order-popup__bottom">
-            <button class="order-popup__cancel">Отмена</button>
-            <button class="button" type="submit">К оплате</button>
+          <div class="popup__bottom">
+            <button class="popup__cancel">Отмена</button>
+            <button class="button popup__submit" type="submit">К оплате</button>
           </div>
         </form>
       </div>
@@ -66,23 +78,23 @@
           </div>
           <div class="cart-main">
             <div class="cart-main__products">
-              <div class="cart-main__product cart-main__product_gray"><span class="cart-main__title">Самый внимательный сыщик Холмс</span>
+              <div class="cart-main__product"><span class="cart-main__title">Самый внимательный сыщик Холмс</span>
                 <div class="cart-main__price"><strong class="cart-main__price_now">550 руб.</strong>
                 </div><a class="cart-main__delete" href="#">Удалить</a>
               </div>
-              <div class="cart-main__product cart-main__product_undefined"><span class="cart-main__title">Правда или ложь</span>
+              <div class="cart-main__product"><span class="cart-main__title">Правда или ложь</span>
                 <div class="cart-main__price"><strong class="cart-main__price_now">250 руб.</strong>
                 </div><a class="cart-main__delete" href="#">Удалить</a>
               </div>
-              <div class="cart-main__product cart-main__product_gray"><span class="cart-main__title">Отгадай слово</span>
+              <div class="cart-main__product"><span class="cart-main__title">Отгадай слово</span>
                 <div class="cart-main__price"><strong class="cart-main__price_now">330 руб.</strong>
                 </div><a class="cart-main__delete" href="#">Удалить</a>
               </div>
-              <div class="cart-main__product cart-main__product_undefined"><span class="cart-main__title">Правда или ложь</span>
+              <div class="cart-main__product"><span class="cart-main__title">Правда или ложь</span>
                 <div class="cart-main__price"><strong class="cart-main__price_now">440 руб.</strong>
                 </div><a class="cart-main__delete" href="#">Удалить</a>
               </div>
-              <div class="cart-main__product cart-main__product_gray"><span class="cart-main__title">Самый внимательный сыщик Холмс</span>
+              <div class="cart-main__product"><span class="cart-main__title">Самый внимательный сыщик Холмс</span>
                 <div class="cart-main__price">
                   <div class="cart-main__price_tag">-10%</div><strong class="cart-main__price_now">360 руб.</strong><span class="cart-main__price_before">400 руб.</span>
                 </div><a class="cart-main__delete" href="#">Удалить</a>
